@@ -1,5 +1,6 @@
 #include <M5StickCPlus.h>
 #include "MAX30100_PulseOximeter.h"
+#include "jingle_bells.h"
 
 #define LED_PIN 10 // G10
 #define REPORTING_PERIOD_MS 1000
@@ -75,8 +76,14 @@ void setup()
 
 void loop()
 {
+	M5.update();
 	pulseOximeter();
 
-	M5.update();
+	// M5ボタン判定(ジングルベル)
+	if (M5.BtnA.wasPressed())
+	{
+		jingleBells();
+	}
+
 	delay(50);
 }
