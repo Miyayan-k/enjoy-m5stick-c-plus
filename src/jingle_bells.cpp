@@ -20,7 +20,7 @@ void jingleBellsA()
 	M5.Beep.tone(493);
 	delay(400);
 	M5.Beep.mute();
-	delay(900);
+	delay(700);
 
 	M5.Lcd.print("  Jingle bells,");
 	M5.Beep.tone(493);
@@ -51,15 +51,15 @@ void jingleBellsA()
 	M5.Beep.mute();
 	delay(100);
 	M5.Beep.tone(391);
-	delay(400);
+	delay(800);
 	M5.Beep.mute();
 	delay(100);
 	M5.Beep.tone(440);
-	delay(400);
+	delay(100);
 	M5.Beep.mute();
 	delay(100);
 	M5.Beep.tone(493);
-	delay(400);
+	delay(600);
 	M5.Beep.mute();
 	delay(700);
 
